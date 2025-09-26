@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Training Schools - Professional Truck & Heavy Equipment Training</title>
+    <meta name="description" content="National Training Schools offers comprehensive truck driving and heavy equipment training programs. Get certified and start your new career today!">
+    <meta name="keywords" content="truck driving school, heavy equipment training, CDL training, heavy machinery operator, career training">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* CSS Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary: #1a3a6c;
+            --secondary: #e63946;
+            --accent: #fca311;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --gray: #6c757d;
+            --light-gray: #e9ecef;
+            --success: #28a745;
+            --warning: #ffc107;
+            --danger: #dc3545;
+            --font-primary: 'Roboto', sans-serif;
+            --font-secondary: 'Open Sans', sans-serif;
+            --transition: all 0.3s ease;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --radius: 4px;
+        }
+        
+        body {
+            font-family: var(--font-secondary);
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: #fff;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-primary);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+        }
+        
+        h2 {
+            font-size: 2rem;
+        }
+        
+        h3 {
+            font-size: 1.75rem;
+        }
+        
+        h4 {
+            font-size: 1.5rem;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+        }
+        
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        a:hover {
+            color: var(--secondary);
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            border-radius: var(--radius);
+            font-weight: 600;
+            text-align: center;
+            cursor: pointer;
+            transition: var(--transition);
+            font-size: 1rem;
+        }
+        
+        .btn:hover {
+            background-color: var(--secondary);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: var(--shadow);
+        }
+        
+        .btn-secondary {
+            background-color: var(--secondary);
+        }
+        
+        .btn-secondary:hover {
+            background-color: var(--primary);
+        }
+        
+        .btn-accent {
+            background-color: var(--accent);
+            color: var(--dark);
+        }
+        
+        .btn-accent:hover {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+        }
+        
+        .btn-outline:hover {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        .section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background-color: var(--accent);
+            margin: 15px auto 0;
+        }
+        
+        .text-center {
+            text-align: center;
+        }
+        
+        .mb-4 {
+            margin-bottom: 2rem;
+        }
+        
+        .mt-4 {
+            margin-top: 2rem;
+        }
+        
+        .d-flex {
+            display: flex;
+        }
+        
+        .justify-content-center {
+            justify-content: center;
+        }
+        
+        .align-items-center {
+            align-items: center;
+        }
+        
+        .grid {
+            display: grid;
+            gap: 30px;
+        }
+        
+        .grid-2 {
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+        
+        .grid-3 {
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+        
+        .card {
+            background-color: white;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            overflow: hidden;
+            transition: var(--transition);
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .card-body {
+            padding: 25px;
+        }
+        
+        .card-title {
+            font-size: 1.25rem;
+            margin-bottom: 15px;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .header-top {
+            background-color: var(--primary);
+            color: white;
+            padding: 10px 0;
+            font-size: 0.9rem;
+        }
+        
+        .header-top .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .header-contact {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .header-contact a {
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .header-contact a:hover {
+            color: var(--accent);
+        }
+        
+        .header-social a {
+            color: white;
+            margin-left: 15px;
+            font-size: 1.1rem;
+        }
+        
+        .header-social a:hover {
+            color: var(--accent);
+        }
+        
+        .main-header {
+            padding: 15px 0;
+        }
+        
+        .main-header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .logo img {
+            height: 60px;
+        }
+        
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .logo-text h1 {
+            font-size: 1.8rem;
+            margin-bottom: 0;
+            color: var(--primary);
+            line-height: 1;
+        }
+        
+        .logo-text span {
+            font-size: 0.9rem;
+            color: var(--gray);
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+        
+        nav a {
+            color: var(--dark);
+            font-weight: 600;
+            font-size: 1rem;
+            position: relative;
+        }
+        
+        nav a:hover {
+            color: var(--primary);
+        }
+        
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--primary);
+            transition: var(--transition);
+        }
+        
+        nav a:hover::after {
+            width: 100%;
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--primary);
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-4.0.3&auto=format&fit=crop&w=2074&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 120px 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: white;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        /* Programs Section */
+        .programs {
+            background-color: var(--light);
+        }
+        
+        .program-card {
+            text-align: center;
+            height: 100%;
+        }
+        
+        .program-icon {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        
+        /* Features Section */
+        .feature-item {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+        
+        .feature-icon {
+            background-color: var(--light);
+            color: var(--primary);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            background-color: var(--light);
+        }
+        
+        .testimonial-card {
+            text-align: center;
+            padding: 30px;
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        
+        .testimonial-text::before {
+            content: '"';
+            font-size: 3rem;
+            color: var(--light-gray);
+            position: absolute;
+            top: -20px;
+            left: -10px;
+            z-index: -1;
+        }
+        
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--primary);
+        }
+        
+        .testimonial-role {
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 60px 0 20px;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-logo img {
+            height: 50px;
+            margin-bottom: 15px;
+        }
+        
+        .footer-logo p {
+            color: #adb5bd;
+        }
+        
+        .footer-heading {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            color: white;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-heading::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background-color: var(--accent);
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: #adb5bd;
+            transition: var(--transition);
+        }
+        
+        .footer-links a:hover {
+            color: var(--accent);
+            padding-left: 5px;
+        }
+        
+        .footer-contact li {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin-bottom: 15px;
+            color: #adb5bd;
+        }
+        
+        .footer-contact i {
+            color: var(--accent);
+            margin-top: 3px;
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid #495057;
+            padding-top: 20px;
+            text-align: center;
+            color: #adb5bd;
+            font-size: 0.9rem;
+        }
+        
+        /* Breadcrumbs */
+        .breadcrumb {
+            background-color: var(--light);
+            padding: 15px 0;
+            margin-bottom: 30px;
+        }
+        
+        .breadcrumb-list {
+            display: flex;
+            list-style: none;
+            gap: 10px;
+        }
+        
+        .breadcrumb-list li:not(:last-child)::after {
+            content: '/';
+            margin-left: 10px;
+            color: var(--gray);
+        }
+        
+        .breadcrumb-list a {
+            color: var(--gray);
+        }
+        
+        .breadcrumb-list a:hover {
+            color: var(--primary);
+        }
+        
+        /* Forms */
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ced4da;
+            border-radius: var(--radius);
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+        
+        .form-control:focus {
+            border-color: var(--primary);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(26, 58, 108, 0.1);
+        }
+        
+        /* Chat Widget */
+        .chat-widget {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+        
+        .chat-toggle {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            cursor: pointer;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        
+        .chat-toggle:hover {
+            background-color: var(--secondary);
+            transform: scale(1.1);
+        }
+        
+        .chat-container {
+            position: absolute;
+            bottom: 70px;
+            right: 0;
+            width: 350px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+            display: none;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        
+        .chat-header {
+            background-color: var(--primary);
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .chat-close {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+        
+        .chat-body {
+            padding: 15px;
+            height: 300px;
+            overflow-y: auto;
+        }
+        
+        .chat-message {
+            margin-bottom: 15px;
+            display: flex;
+        }
+        
+        .chat-message.bot {
+            justify-content: flex-start;
+        }
+        
+        .chat-message.user {
+            justify-content: flex-end;
+        }
+        
+        .message-bubble {
+            max-width: 80%;
+            padding: 10px 15px;
+            border-radius: 18px;
+        }
+        
+        .bot .message-bubble {
+            background-color: var(--light-gray);
+            border-top-left-radius: 5px;
+        }
+        
+        .user .message-bubble {
+            background-color: var(--primary);
+            color: white;
+            border-top-right-radius: 5px;
+        }
+        
+        .chat-footer {
+            padding: 15px;
+            border-top: 1px solid var(--light-gray);
+            display: flex;
+        }
+        
+        .chat-input {
+            flex: 1;
+            padding: 10px 15px;
+            border: 1px solid #ced4da;
+            border-radius: 20px;
+            margin-right: 10px;
+        }
+        
+        .chat-send {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            h2 {
+                font-size: 1.8rem;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            nav ul {
+                gap: 15px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header-top .container {
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+            }
+            
+            .header-contact {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            nav {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 280px;
+                height: 100vh;
+                background-color: white;
+                box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+                transition: var(--transition);
+                z-index: 1001;
+                padding: 80px 20px 20px;
+            }
+            
+            nav.active {
+                right: 0;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                gap: 0;
+            }
+            
+            nav li {
+                border-bottom: 1px solid var(--light-gray);
+            }
+            
+            nav a {
+                display: block;
+                padding: 15px 0;
+            }
+            
+            .mobile-menu-overlay {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+                z-index: 1000;
+                display: none;
+            }
+            
+            .mobile-menu-overlay.active {
+                display: block;
+            }
+            
+            .hero {
+                padding: 80px 0;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .section {
+                padding: 60px 0;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .chat-container {
+                width: 300px;
+            }
+            
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Top -->
+    <div class="header-top">
+        <div class="container">
+            <div class="header-contact">
+                <a href="tel:1-800-123-4567"><i class="fas fa-phone"></i> 1-800-123-4567</a>
+                <a href="mailto:info@nationaltrainingschools.com"><i class="fas fa-envelope"></i> info@nationaltrainingschools.com</a>
+            </div>
+            <div class="header-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Main Header -->
+    <header>
+        <div class="main-header">
+            <div class="container">
+                <div class="logo">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgMTAwIj48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0iIzFhM2E2YyIvPjx0ZXh0IHg9IjEwMCIgeT0iNTUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyNCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+TlRTPC90ZXh0Pjx0ZXh0IHg9IjEwMCIgeT0iODAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+TmF0aW9uYWwgVHJhaW5pbmcgU2Nob29sczwvdGV4dD48L3N2Zz4=" alt="National Training Schools Logo">
+                    <div class="logo-text">
+                        <h1>National Training Schools</h1>
+                        <span>Professional Career Training</span>
+                    </div>
+                </div>
+                
+                <button class="mobile-menu-btn" id="mobileMenuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <nav id="mainNav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="tuition.html">Tuition</a></li>
+                        <li><a href="faqs.html">FAQs</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Start Your Career in Trucking or Heavy Equipment Operation</h1>
+            <p>Get certified with National Training Schools and launch your new career in just weeks. Our expert instructors and hands-on training prepare you for success.</p>
+            <div class="hero-buttons">
+                <a href="programs.html" class="btn btn-accent">Explore Programs</a>
+                <a href="contact.html" class="btn btn-outline">Contact Us</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Programs Section -->
+    <section class="section programs">
+        <div class="container">
+            <h2 class="section-title">Our Training Programs</h2>
+            <div class="grid grid-2">
+                <div class="card program-card">
+                    <div class="card-body">
+                        <div class="program-icon">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <h3 class="card-title">Truck Driving Training</h3>
+                        <p>Comprehensive CDL training program that prepares you for a career as a professional truck driver. Learn from industry experts with hands-on experience.</p>
+                        <ul style="text-align: left; margin: 20px 0;">
+                            <li>Class A CDL Training</li>
+                            <li>Class B CDL Training</li>
+                            <li>Refresher Courses</li>
+                            <li>Job Placement Assistance</li>
+                        </ul>
+                        <a href="truck-driving.html" class="btn">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="card program-card">
+                    <div class="card-body">
+                        <div class="program-icon">
+                            <i class="fas fa-tractor"></i>
+                        </div>
+                        <h3 class="card-title">Heavy Equipment Training</h3>
+                        <p>Master the operation of heavy machinery used in construction, mining, and other industries. Get certified and start your high-paying career.</p>
+                        <ul style="text-align: left; margin: 20px 0;">
+                            <li>Excavator Operation</li>
+                            <li>Bulldozer Training</li>
+                            <li>Crane Operation</li>
+                            <li>Safety Certification</li>
+                        </ul>
+                        <a href="heavy-equipment.html" class="btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Features Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Why Choose National Training Schools?</h2>
+            <div class="grid grid-3">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div>
+                        <h3>Expert Instructors</h3>
+                        <p>Learn from industry professionals with years of real-world experience.</p>
+                    </div>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <div>
+                        <h3>Job Placement Assistance</h3>
+                        <p>We help our graduates find employment opportunities with top companies.</p>
+                    </div>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div>
+                        <h3>Flexible Scheduling</h3>
+                        <p>Day and evening classes available to fit your busy schedule.</p>
+                    </div>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <div>
+                        <h3>Affordable Tuition</h3>
+                        <p>Competitive pricing with financing options available.</p>
+                    </div>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div>
+                        <h3>Industry-Recognized Certification</h3>
+                        <p>Our certifications are respected by employers nationwide.</p>
+                    </div>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div>
+                        <h3>Multiple Locations</h3>
+                        <p>Training facilities across the country for your convenience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section class="section testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Graduates Say</h2>
+            <div class="grid grid-3">
+                <div class="card testimonial-card">
+                    <div class="testimonial-text">
+                        <p>The truck driving program at National Training Schools changed my life. I went from working a dead-end job to a fulfilling career with great pay.</p>
+                    </div>
+                    <div class="testimonial-author">Michael Johnson</div>
+                    <div class="testimonial-role">CDL Class A Graduate</div>
+                </div>
+                
+                <div class="card testimonial-card">
+                    <div class="testimonial-text">
+                        <p>I was nervous about operating heavy equipment, but the instructors were patient and knowledgeable. Now I have a stable career in construction.</p>
+                    </div>
+                    <div class="testimonial-author">Sarah Williams</div>
+                    <div class="testimonial-role">Heavy Equipment Operator</div>
+                </div>
+                
+                <div class="card testimonial-card">
+                    <div class="testimonial-text">
+                        <p>The job placement assistance was incredible. I had a job offer before I even graduated! Highly recommend this school.</p>
+                    </div>
+                    <div class="testimonial-author">James Rodriguez</div>
+                    <div class="testimonial-role">Excavator Operator</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="section" style="background-color: var(--primary); color: white;">
+        <div class="container text-center">
+            <h2>Ready to Start Your New Career?</h2>
+            <p class="mb-4">Contact us today to learn more about our programs and how we can help you achieve your career goals.</p>
+            <a href="contact.html" class="btn btn-accent">Get Started Today</a>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgMTAwIj48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0iI2ZmZmZmZiIvPjx0ZXh0IHg9IjEwMCIgeT0iNTUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyNCIgZmlsbD0iIzFhM2E2YyIgdGV4dC1hbmNob3I9Im1pZGRsZSI+TlRTPC90ZXh0Pjx0ZXh0IHg9IjEwMCIgeT0iODAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0iIzFhM2E2YyIgdGV4dC1hbmNob3I9Im1pZGRsZSI+TmF0aW9uYWwgVHJhaW5pbmcgU2Nob29sczwvdGV4dD48L3N2Zz4=" alt="National Training Schools Logo">
+                    </div>
+                    <p>National Training Schools provides comprehensive career training in truck driving and heavy equipment operation. Our mission is to help students build successful careers with industry-leading training programs.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="tuition.html">Tuition & Financing</a></li>
+                        <li><a href="faqs.html">FAQs</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3 class="footer-heading">Contact Us</h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Training Avenue, Suite 100<br>City, State 12345</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>1-800-123-4567</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@nationaltrainingschools.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Mon-Fri: 8:00 AM - 6:00 PM<br>Sat: 9:00 AM - 1:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 National Training Schools. All rights reserved. | <a href="privacy.html" style="color: #adb5bd;">Privacy Policy</a> | <a href="terms.html" style="color: #adb5bd;">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Chat Widget -->
+    <div class="chat-widget">
+        <button class="chat-toggle" id="chatToggle">
+            <i class="fas fa-comments"></i>
+        </button>
+        <div class="chat-container" id="chatContainer">
+            <div class="chat-header">
+                <h3>Chat with Us</h3>
+                <button class="chat-close" id="chatClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="chat-body" id="chatBody">
+                <div class="chat-message bot">
+                    <div class="message-bubble">
+                        Hello! How can we help you today?
+                    </div>
+                </div>
+            </div>
+            <div class="chat-footer">
+                <input type="text" class="chat-input" id="chatInput" placeholder="Type your message...">
+                <button class="chat-send" id="chatSend">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+        const mainNav = document.getElementById('mainNav');
+        const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+        
+        mobileMenuToggle.addEventListener('click', function() {
+            mainNav.classList.toggle('active');
+            mobileMenuOverlay.classList.toggle('active');
+        });
+        
+        mobileMenuOverlay.addEventListener('click', function() {
+            mainNav.classList.remove('active');
+            mobileMenuOverlay.classList.remove('active');
+        });
+        
+        // Chat Widget Toggle
+        const chatToggle = document.getElementById('chatToggle');
+        const chatContainer = document.getElementById('chatContainer');
+        const chatClose = document.getElementById('chatClose');
+        const chatSend = document.getElementById('chatSend');
+        const chatInput = document.getElementById('chatInput');
+        const chatBody = document.getElementById('chatBody');
+        
+        chatToggle.addEventListener('click', function() {
+            chatContainer.style.display = 'flex';
+        });
+        
+        chatClose.addEventListener('click', function() {
+            chatContainer.style.display = 'none';
+        });
+        
+        // Simple Chat Functionality
+        chatSend.addEventListener('click', sendMessage);
+        chatInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                sendMessage();
+            }
+        });
+        
+        function sendMessage() {
+            const message = chatInput.value.trim();
+            if (message === '') return;
+            
+            // Add user message
+            addMessage(message, 'user');
+            chatInput.value = '';
+            
+            // Simulate bot response after a short delay
+            setTimeout(function() {
+                let response = "Thank you for your message. Our team will get back to you shortly. In the meantime, you can call us at 1-800-123-4567 for immediate assistance.";
+                
+                if (message.toLowerCase().includes('program') || message.toLowerCase().includes('course')) {
+                    response = "We offer comprehensive training programs in truck driving and heavy equipment operation. Would you like more information about a specific program?";
+                } else if (message.toLowerCase().includes('price') || message.toLowerCase().includes('cost') || message.toLowerCase().includes('tuition')) {
+                    response = "Tuition varies by program and financing options are available. Our admissions team can provide detailed pricing information. Would you like to speak with an advisor?";
+                } else if (message.toLowerCase().includes('schedule') || message.toLowerCase().includes('time') || message.toLowerCase().includes('start')) {
+                    response = "We offer flexible scheduling with day and evening classes. New classes start monthly. When would you like to begin your training?";
+                }
+                
+                addMessage(response, 'bot');
+            }, 1000);
+        }
+        
+        function addMessage(text, sender) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `chat-message ${sender}`;
+            
+            const bubbleDiv = document.createElement('div');
+            bubbleDiv.className = 'message-bubble';
+            bubbleDiv.textContent = text;
+            
+            messageDiv.appendChild(bubbleDiv);
+            chatBody.appendChild(messageDiv);
+            
+            // Scroll to bottom
+            chatBody.scrollTop = chatBody.scrollHeight;
+        }
+        
+        // Form Validation Example (for future implementation)
+        function validateForm(form) {
+            const inputs = form.querySelectorAll('input[required], select[required], textarea[required]');
+            let isValid = true;
+            
+            inputs.forEach(input => {
+                if (!input.value.trim()) {
+                    isValid = false;
+                    input.style.borderColor = 'var(--danger)';
+                } else {
+                    input.style.borderColor = '#ced4da';
+                }
+                
+                // Email validation
+                if (input.type === 'email') {
+                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if (!emailRegex.test(input.value)) {
+                        isValid = false;
+                        input.style.borderColor = 'var(--danger)';
+                    }
+                }
+            });
+            
+            return isValid;
+        }
+        
+        // Example of API integration placeholder (for Podio and WooCommerce)
+        function submitFormData(formData) {
+            // This would be replaced with actual API calls to Podio and WooCommerce
+            console.log('Form data to be submitted:', formData);
+            
+            // Example API call structure:
+            /*
+            fetch('https://api.podio.com/item/app/{app_id}/', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': 'Bearer YOUR_ACCESS_TOKEN'
+                },
+                body: JSON.stringify(formData)
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Success:', data);
+                // Handle success
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                // Handle error
+            });
+            */
+        }
+    </script>
+</body>
+</html>
